@@ -62,6 +62,30 @@ api_key: <your API key>
 
 ```
 
+### Vagrant
+
+This repository contains a Vagrant setup so you can get started with the assessment quickly. Using this setup, you can spin up a virtual machine in VirtualBox with a fully functional StackState agent install.
+
+To start the virtual machine, use:
+
+```
+vagrant up
+```
+
+Log into the box using:
+
+```
+vagrant ssh
+```
+
+You can change to root with the command:
+
+```
+sudo su -
+```
+
+once logged into the VM.
+
 ## Notes
 
 Keep the following in mind:
