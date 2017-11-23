@@ -35,7 +35,7 @@ The StackState agent is [open-source](https://github.com/StackVista/sts-agent/) 
 
 ### Plugin
 
-Plugins are written in Python and will run inside the StackState agent. Documentation about [how to write a StackState agent plugin](http://docs.stackstate.com/guides/agent_checks/) is also available.
+Plugins are written in Python 2.7 and will run inside the StackState agent. Documentation about [how to write a StackState agent plugin](http://docs.stackstate.com/guides/agent_checks/) is also available.
 
 ### StackState instance
 
@@ -91,6 +91,7 @@ once logged into the VM.
 Keep the following in mind:
 
 * the Twitter REST API implements [rate limiting](https://dev.twitter.com/rest/public/rate-limiting), be sure to not exceed the limit
+* StackState plugins are written using Python 2.7
 
 
 ## Delivery
