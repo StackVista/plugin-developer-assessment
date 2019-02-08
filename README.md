@@ -20,7 +20,6 @@ There are a few moving parts to this assignment:
 * the **Twitter service** and it's public REST API, the source of the information
 * a **StackState agent instance** that is able to collect information and send it to a StackState instance
 * a **plugin for the StackState agent** that knows how to retrieve information from Twitter (this is what you will write)
-* a **StackState instance** to collect the data, the target for the information
 
 ### Twitter
 
@@ -37,10 +36,6 @@ The StackState agent is [open-source](https://github.com/StackVista/sts-agent/) 
 
 Plugins are written in Python 2.7 and will run inside the StackState agent. Documentation about [how to write a StackState agent plugin](http://docs.stackstate.com/guides/agent_checks/) is also available.
 
-### StackState instance
-
-Use the StackState instance available at _assessment.stackstate.io_. You will receive a unique **API key** to use when communicating with the StackState instance.
-
 ## Assignment
 
 Implement a StackState agent plugin that retrieves information from Twitter and sends this information to StackState.
@@ -53,14 +48,6 @@ Implement a StackState agent plugin that retrieves information from Twitter and 
 When you've written a new check, you'll want to test that it works properly.
 
 One way to test it is to write an integration test for it. Our [documentation](https://github.com/StackVista/sts-agent/blob/master/tests/README.md#integration-tests) describes how to do that.
-
-You can also run the agent against the StackState assessment instance. To do so, use these settings:
-
-```
-dd_url: https://assessment.stackstate.io/stsAgent/
-api_key: <your API key>
-
-```
 
 ### Vagrant
 
@@ -96,4 +83,4 @@ Keep the following in mind:
 
 ## Delivery
 
-To submit the assessment, email us the Python source code for the plugin as well as the API key that you used.
+To submit the assessment, email us the Python source code for the plugin.
