@@ -6,7 +6,7 @@ echo Starting provisioning...
 apt-get update
 apt-get install -y unzip
 
-dpkg -i /vagrant/stackstate-agent_1.1.0-1_amd64.deb
+dpkg -i /vagrant/stackstate-agent_1.2.9-1_amd64.deb
 ln -s /vagrant/stackstate.conf /etc/sts-agent/stackstate.conf
 
 cd /opt/stackstate-agent/embedded
