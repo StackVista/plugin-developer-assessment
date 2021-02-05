@@ -34,7 +34,7 @@ The StackState agent is [open-source](https://github.com/StackVista/stackstate-a
 
 ### Plugin
 
-Plugins are written in Python 2.7 and will run inside the StackState agent. Documentation about [how to write a StackState agent plugin](https://docs.stackstate.com/develop/developer-guides/agent_check) is also available.
+Plugins are written in Python 2.7 and will run inside the StackState agent. Documentation about [how to write a StackState agent plugin](https://docs.stackstate.com/develop/developer-guides/agent_check/how_to_develop_agent_checks) is also available.
 
 ## Assignment
 
