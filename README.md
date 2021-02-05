@@ -30,11 +30,11 @@ Authentication for the REST API can be done using [OAuth application owner acces
 
 ### Agent
 
-The StackState agent is [open-source](https://github.com/StackVista/sts-agent/) and can be downloaded and installed separately. There is a public git repository that contains a Vagrant image for developing and testing with the STS agent, see [this repository](https://github.com/StackVista/plugin-developer-assessment).
+The StackState agent is [open-source](https://github.com/StackVista/stackstate-agent) and can be downloaded and installed separately. There is a public git repository that contains a Vagrant image for developing and testing with the STS agent, see [this repository](https://github.com/StackVista/plugin-developer-assessment).
 
 ### Plugin
 
-Plugins are written in Python 2.7 and will run inside the StackState agent. Documentation about [how to write a StackState agent plugin](http://docs.stackstate.com/guides/agent_checks/) is also available.
+Plugins are written in Python 2.7 and will run inside the StackState agent. Documentation about [how to write a StackState agent plugin](https://docs.stackstate.com/develop/developer-guides/agent_check) is also available.
 
 ## Assignment
 
@@ -45,9 +45,7 @@ Implement a StackState agent plugin that retrieves information from Twitter and 
 
 ### Testing
 
-When you've written a new check, you'll want to test that it works properly.
-
-One way to test it is to write an integration test for it. Our [documentation](https://github.com/StackVista/sts-agent/blob/master/tests/README.md#integration-tests) describes how to do that.
+When you've written a new check, you'll want to test that it works properly. You can test the integration by running it manually, or writing a unit or integration test for it.
 
 ### Vagrant
 

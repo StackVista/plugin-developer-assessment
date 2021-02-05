@@ -6,17 +6,11 @@ echo Starting provisioning...
 apt-get update
 apt-get install -y unzip
 
-dpkg -i /vagrant/stackstate-agent_1.2.9-1_amd64.deb
-ln -s /vagrant/stackstate.conf /etc/sts-agent/stackstate.conf
+curl -o- https://stackstate-agent-2.s3.amazonaws.com/install.sh | \
+    STS_API_KEY="f23e5a0a-ad83-4710-9037-1879fee26edc" \
+    STS_URL="http://localhost/stsAgent" bash
 
-cd /opt/stackstate-agent/embedded
-bin/pip install --upgrade pip
-cd -
-
-mv /etc/sts-agent/conf.d/disk.yaml.default /etc/sts-agent/conf.d/disk.yaml.example
-mv /etc/sts-agent/conf.d/agent_metrics.yaml.default /etc/sts-agent/conf.d/agent_metrics.yaml.example
-mv /etc/sts-agent/conf.d/network.yaml.default /etc/sts-agent/conf.d/network.yaml.example
-mv /etc/sts-agent/conf.d/ntp.yaml.default /etc/sts-agent/conf.d/ntp.yaml.example
+ln -s /vagrant/stackstate.conf /etc/stackstate-agent/stackstate.conf
 
 SCRIPT
 
